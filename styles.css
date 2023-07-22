@@ -26,12 +26,12 @@
 }
 
 .left-side .salam .one {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
 }
 
 .left-side .salam .two {
-  font-size: 18px;
+  font-size: 14px;
   letter-spacing: 2.8px;
 }
 
@@ -57,6 +57,7 @@
   font-size: 16px;
   font-weight: bold;
   text-align: center;
+  color: #292929;
   background-color: #f68121;
   border: 3px solid #292929;
   border-radius: 10px;
@@ -66,10 +67,10 @@
 
 .right-side p.lokasi {
   font-family: 'Inter', sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   letter-spacing: 3px;
-  line-height: 20px;
+  line-height: 18px;
   text-align: center;
 }
 
@@ -88,12 +89,12 @@
   font-family: 'Inter', sans-serif;
   font-weight: bold;
   font-size: 14px;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   text-align: left;
 }
 
 .right-side .contact img {
-  width: 150px;
+  width: 100px;
 }
 
 @media only screen and (min-width: 767px) {
@@ -110,7 +111,15 @@
   .left-side {
     /* background-color: #cccccc; */
     width: 100%;
-    padding-top: 10px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-side img {
+    width: auto;
+    height: 100%;
   }
 
   .left-side .salam {
@@ -143,39 +152,35 @@
 
   .right-side a.btn-link {
     grid-area: button;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bold;
     text-align: center;
     background-color: #f68121;
     color: #292929;
     border: 5px solid #292929;
     border-radius: 16px;
-    padding: 20px;
-    margin: 20px 0;
+    padding: 10px;
   }
   
   .right-side p.lokasi {
     grid-area: lokasi;
     font-family: 'Inter', sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     letter-spacing: 3px;
-    line-height: 30px;
+    line-height: 24px;
     text-align: center;
-    margin-bottom: 20px;
   }
   
   .right-side img {
     grid-area: event;
     width: 100%;
-    margin: 20px 0;
   }
   
   .right-side .contact {
     grid-area: contact;
     display: flex;
     width: 100%;
-    margin-top: 20px;
     justify-content: space-between;
     align-items: center;
   }
@@ -183,12 +188,12 @@
   .right-side .contact p {
     font-family: 'Inter', sans-serif;
     font-weight: bold;
-    font-size: 16px;
-    letter-spacing: 5px;
+    font-size: 14px;
+    letter-spacing: 3px;
     text-align: left;
   }
   
   .right-side .contact img {
-    width: 150px;
+    width: 100px;
   }
 }
