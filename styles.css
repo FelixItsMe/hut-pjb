@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  height: 100vh;
+  justify-items: center;
+}
+
+.left-side {
+  /* background-color: #cccccc; */
+  width: 80%;
+  padding-top: 10%;
+}
+
+.left-side .salam {
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  text-align: center;
+}
+
+.left-side .salam .one {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.left-side .salam .two {
+  font-size: 18px;
+  letter-spacing: 2.8px;
+}
+
+.left-side img {
+  width: 100%;
+  height: auto;
+}
+
+.right-side {
+  /* background-color: orangered; */
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.right-side button {
+  width: 100%;
+  
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #f68121;
+  border: 3px solid #292929;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.right-side p.lokasi {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.right-side img {
+  width: 100%;
+}
+
+.right-side .contact {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-side .contact p {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 5px;
+  text-align: left;
+}
+
+.right-side .contact img {
+  width: 150px;
+}
+
+@media only screen and (min-width: 767px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    align-content: normal;
+  }
+
+  .left-side {
+    /* background-color: #cccccc; */
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .left-side .salam {
+    margin-bottom: 20px;
+  }
+
+  .left-side .salam .one {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  
+  .left-side .salam .two {
+    font-size: 20px;
+    letter-spacing: 2.8px;
+  }
+
+  .right-side {
+    /* background-color: #f6832d; */
+    width: 100%;
+    height: 100%;
+    padding: 0 50px;
+    display: grid;
+    align-content: center;
+    grid-template-areas: 
+    "lokasi"
+    "button"
+    "event"
+    "contact";
+  }
+
+  .right-side button {
+    grid-area: button;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f68121;
+    color: #292929;
+    border: 5px solid #292929;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .right-side p.lokasi {
+    grid-area: lokasi;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .right-side img {
+    grid-area: event;
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .right-side .contact {
+    grid-area: contact;
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .right-side .contact p {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 5px;
+    text-align: left;
+  }
+  
+  .right-side .contact img {
+    width: 150px;
+  }
+}
